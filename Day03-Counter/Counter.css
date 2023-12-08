@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap'); */
+
+body {
+  height: 100vh;
+  background-color: #13162b;
+  display: grid;
+  place-items: center;
+  font-family: Creepster;
+}
+
+.container {
+  position: relative;
+  width: 80vmin;
+  background-color: #191c37;
+  padding: 100px 40px;
+  border-radius: 9px;
+  box-shadow: 0 25px 40px rgba(0, 0, 0, 0.2);
+}
+
+.container:after {
+  content: "";
+  position: absolute;
+  width: 85%;
+  left: 7.5%;
+  height: 120%;
+  bottom: -10%;
+  background-color: #0097ff;
+  z-index: -1;
+  border-radius: 8px;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 5rem;
+  text-align: center;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 80px;
+}
+
+.btns button {
+  width: 150px;
+  height: 50px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button.decrement-btn,
+button.increment-btn {
+  background-color: #0087ff;
+  color: #ffffff;
+}
+
+button.reset-btn {
+  background-color: transparent;
+  border: 4px solid #0087ff;
+  color: #0087ff;
+}
